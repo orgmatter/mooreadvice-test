@@ -1,0 +1,114 @@
+.admin-cover {
+    border: 1px solid red;
+    height: 100vh;
+}
+.admin-cover-flex {
+    width: 100%;
+    height: 100%;
+}
+.admin-cover-item {
+    height: 100%;
+}
+.admin-cover-header-flex {
+    width: 100%;
+    height: 10%;
+}
+.admin-cover-header-item {
+
+}
+.admin-content-cover-flex {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+.admin-content-cover-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.admin-content-cover {
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid lightgrey;
+    border-radius: 10px; */
+}
+.admin-content-header-flex {
+
+}
+.admin-content-header-item {
+
+}
+.content-header-flex {
+
+}
+.content-header-item {
+
+}
+.header-link {
+
+}
+
+.admin-content-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgrey;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.admin-content-item {
+    width: 100%;
+}
+.view-task-cover-flex {
+
+}
+.view-task-cover-item {
+
+}
+.view-task-table {
+    
+}
+.view-task-tr-head {
+
+}
+.view-task-th {
+    text-align: center;
+}
+.view-task-tr-body {
+
+}
+.view-task-form {
+
+}
+.view-task-td {
+    vertical-align: middle !important;
+}
+.task-input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.action-cover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.action-cover-flex {
+    width: 98%;
+    display: flex;
+    justify-content: space-between
+}
+.action-cover-item {
+    width: 45%;
+}
+.action-btn {
+    width: 100%;
+    padding: 5px;
+}
