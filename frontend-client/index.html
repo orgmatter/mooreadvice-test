@@ -42,10 +42,10 @@
                                 </div>
                                 <div class="admin-content-flex">
                                     <div class="admin-content-item">
-                                        <div class="tab-content" id="myTabContent">
+                                        <div class="task-tab-content tab-content" id="myTabContent">
                                             <div class="view-task-cover-flex tab-pane fade show active" id="view" role="tabpanel" aria-labelledby="view-tab">
-                                                <div class="view-task-cover-item">
-                                                    <table class="view-task-table table table-striped">
+                                                <div class="view-task-cover-item table-responsive">
+                                                    <table class="view-task-table table">
                                                         <caption>List of tasks</caption>
                                                         <thead>
                                                             <tr class="view-task-tr-head">
@@ -55,45 +55,40 @@
                                                                 <th class="view-task-th" scope="col">Action</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
-                                                            <tr class="view-task-tr-body">
-                                                                <form class="view-task-form" id="view_task_form" action="" method="post">
-                                                                    <th class="view-task-td" scope="row">id</th>
-                                                                    <td class="view-task-td"><input class="task-input" id="task_name" type="text" name="taskName" value="" placeholder="Enter task name" /></td>
-                                                                    <td class="view-task-td"><input class="task-input" id="task_desc" type="text" name="taskDesc" value="" placeholder="Enter task desc" /></td>
-                                                                    <td class="view-task-td">
-                                                                        <div class="action-cover">
-                                                                            <div class="action-cover-flex row">
-                                                                                <div class="action-cover-item"><button class="action-btn btn btn-primary col" id="action_edit_btn" type="button">Edit <i class="fa fa-edit"></i></button></div>
-                                                                                <div class="action-cover-item"><button class="action-btn btn btn-danger col" id="action_delete_btn" type="button">Delete <i class="fa fa-trash"></i></button></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </form>
-                                                            </tr>
+                                                        <tbody id="view_task_tbody">
+
                                                         </tbody>
                                                     </table>
                                                 </div>
                                             </div>
                                             <div class="create-task-cover-flex tab-pane fade" id="create" role="tabpanel" aria-labelledby="create-tab">
                                                 <div class="create-task-cover-item">
-                                                    <form class="create-task-form" id="create_task_form" action="" method="post">
-                                                        <div class="input-cover-flex">
-                                                            <div class="input-cover-item">
-                                                                <input class="task-name-input" id="task_name" type="text" name="taskName" value="" placeholder="Enter task name here" />
+                                                    <div class="create-task-cover">
+                                                        <form class="create-task-form" id="create_task_form" action="" method="post">
+                                                            <div class="input-cover-flex">
+                                                                <div class="input-cover-item">
+                                                                    <label class="input-label" for="task_name">Name:</label>
+                                                                </div>
+                                                                <div class="input-cover-item">
+                                                                    <input class="task-input" id="task_name" type="text" name="taskName" value="" placeholder="Enter task name here" />
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="input-cover-flex">
-                                                            <div class="input-cover-item">
-                                                                <input class="task-desc-input" id="task_desc" type="text" name="taskDesc" value="" placeholder="Enter task desc here" />
+                                                            <div class="input-cover-flex">
+                                                                <div class="input-cover-item">
+                                                                    <label class="input-label" for="task_name">Desc:</label>
+                                                                </div>
+                                                                <div class="input-cover-item">
+                                                                    <input class="task-input" id="task_desc" type="text" name="taskDesc" value="" placeholder="Enter task desc here" />
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="btn-cover-flex">
-                                                            <div class="btn-cover-item">
-                                                                <button class="task-submit-btn" id="create_btn" type="button">Submit</button>
+                                                            <div class="btn-cover-flex">
+                                                                <div class="btn-cover-item"></div>
+                                                                <div class="btn-cover-item">
+                                                                    <button class="task-submit-btn btn btn-primary" id="create_btn" type="button">Submit</button>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                    </form>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
