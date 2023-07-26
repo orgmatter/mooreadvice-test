@@ -19,7 +19,18 @@ function getTasks() {
         const elementContainerId = "#view_task_tbody";
 
         const taskElements = demoData.length > 0 && demoData.map((task, index) => {
-            document.getElementById(`action_edit_btn_${task.id}`).onclick = alert('hnvhv')
+
+            $(document).ready(function (e) {
+
+                $(`#action_edit_btn_${task.id}`).click((e) => {
+                    $(`#task_name_${task.id}`).attr("readonly", false);
+                    $(`#task_desc_${task.id}`).attr("readonly", false);
+
+                }, (prev) => {
+                    console.log('prev: ', prev);
+                })
+            })
+            
             index++
             return (
                 `<tr class="view-task-tr-body">
@@ -39,7 +50,7 @@ function getTasks() {
                 </tr>`
             )
         })
-        
+
         $(elementContainerId).html(taskElements);
     })
 }
