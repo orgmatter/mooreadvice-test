@@ -97,7 +97,6 @@
     border: none;
     border-radius: 5px;
     padding-left: 5px;
-    /* background-color: rgb(240, 240, 240); */
 }
 .action-cover {
     width: 100%;
@@ -119,7 +118,6 @@
 }
 
 /* create task style */
-
 .create-task-cover-flex {
     width: 100%;
     height: 100%;
@@ -146,18 +144,18 @@
 .create-task-form {
 
 }
-.input-cover-flex {
+.create-task-cover .input-cover-flex {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.input-cover-flex:first-child {
+.create-task-cover .input-cover-flex:first-child {
     padding-bottom: 30px;
 }
-.input-cover-flex:last-child {
+.create-task-cover .input-cover-flex:last-child {
     padding-top: 30px;
 }
-.input-cover-item:first-child {
+.create-task-cover .input-cover-item:first-child {
     width: 20%;
     height: 45px;
     display: flex;
@@ -165,29 +163,93 @@
     align-items: center;
     padding-right: 10px;
 }
-.input-cover-item:last-child {
+.create-task-cover .input-cover-item:last-child {
     width: 80%;
 }
-.input-label {
+.create-task-cover .input-cover-item .input-label {
     margin-block-end: 0rem;
 }
-.task-input {
+.create-task-cover .input-cover-item .task-input {
     width: 90%;
     border: none;
     height: 45px;
 }
-.btn-cover-flex {
+.create-btn-cover-flex {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
 }
-.btn-cover-item:first-child {
+.create-btn-cover-item:first-child {
     width: 20%;
 }
-.btn-cover-item:last-child {
+.create-btn-cover-item:last-child {
     width: 80%;
 }
 .task-submit-btn {
     width: 90%;
+}
+
+/* style for modals */
+.edit-modal-content {
+
+}
+.edit-modal-header {
+    width: 100%;
+}
+.edit-modal-title {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.edit-modal-body {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+.edit-form-cover-flex {
+    width: 100%;
+}
+.edit-form-cover-item {
+    width: 100%;
+}
+.edit-input-cover-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.edit-input-cover-item {
+    width: 70%;
+}
+.edit-input-cover-item .input-cover-flex {
+    width: 100%;
+}
+.edit-input-cover-item .input-cover-flex .input-cover-item {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.edit-input-cover-item .input-cover-flex .input-cover-item .edit-label {
+    width: 100%;
+    text-align: left;
+}
+.edit-input-cover-item .input-cover-flex .input-cover-item .task-input {
+    width: 100%;
+    height: 35px;
+    border: none;
+}
+.modal-btn-cover-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.modal-btn-cover-item {
+    width: 100%;
+}
+.save-btn {
+    width: 100%;
+    height: 35px;
 }

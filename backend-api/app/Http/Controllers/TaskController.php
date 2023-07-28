@@ -87,7 +87,7 @@ class TaskController extends Controller
     {
         try {
             $task = Task::find($task);
-            $task->destroy();
+            $task->delete();
             return response()->json([
                 "status" => "success",
                 "msg" => "Task deleted successfully",
